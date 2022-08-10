@@ -1,0 +1,26 @@
+{
+  "name": "webpage-andersonmaruyama",
+  "version": "1.0.0",
+  "description": "Web Page - Anderson Xavier Maruyama",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willxis/webpage-andersonmaruyama.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willxis/webpage-andersonmaruyama/issues"
+  },
+  "homepage": "https://github.com/willxis/webpage-andersonmaruyama#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
