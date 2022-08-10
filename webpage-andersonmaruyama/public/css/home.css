@@ -24,7 +24,7 @@
 
 #home-header {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     position: absolute;
     height: 100px;
@@ -38,13 +38,13 @@
 
 ul {
     display: inline;
-    padding: 60px;
+    padding: 0px 60px;
 }
 
 li {
     list-style-type: none;
     display: inline;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .nav-a {
@@ -76,11 +76,6 @@ li {
     padding: 50px 20px;
     border-radius: 20px;
 }
-
-/*
-#profile-card:hover {
-    border: solid 2px var(--main-mustard);
-}*/
 
 #profile-image {
     width: 120px;
@@ -116,55 +111,80 @@ li {
 }
 
 #allcontent {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-#about-section {
+#about-section, #strategicBases-section {
     display: flex;
-    flex-direction: row;  
-    padding: 0px 20px;
-    width: 80%;
-    /*margin: 0px 200px;*/
-    padding: 60px 0px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 5%;
+    font-size: 24px;
 }
 
-#about-column-1 {
+#about-column-1, #strategicBases-column-2 {
     min-width: 350px;
     height: 400px;
-    width: 400px;
+    width: 40%;
     overflow: hidden;
 }
 
+#strategicBases-section {
+    background-color: var(--main-mustard);
+}
+
 @media (max-width: 780px) {
-    #about-section {
+    #nav-bar ul {
+        padding: 0px 10px;
+        font-size: 12px;
+    }
+    #about-section, #strategicBases-section {
         flex-direction: column; 
         justify-content: center;
         align-items: center;
         width: 100%; 
-        padding: 60px 20px;
-  }
-  #about-column-1 { 
-    margin-bottom: 10px;
-  }
+        padding: 50px 20px 0px 20px;
+    }
+    #about-column-1, #strategicBases-column-2 { 
+        margin-bottom: 10px;
+    }
+    #strategicBases-column-2 {
+        margin-bottom: 50px;;
+    }
 }
 
-#about-column-2 {
+#about-column-2, #strategicBases-column-1 {
     min-width: 300px;
     padding: 0px 20px;
 }
 
-#about-title h2 {
+#about-title-2 {
+    margin-top: 10px;
+}
+
+.title-h2 {
     font-weight: 400;
     color: var(--main-blue);
     font-size: 30px;
+    margin-bottom: 20px;
 }
 
+.title-h3 {
+    font-weight: 400;
+    color: var(--main-blue);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 
+#about-text-1, #about-text-2 {
+    padding-left: 20px;
+    justify-content: left;
+    text-justify: auto;
+}
 
 #about-image {
     min-width: 200px;
@@ -173,23 +193,38 @@ li {
 }
 
 #galery-section {
-    width: 80%;
-    /*margin: 20px 200px;*/
-}
-
-#galery-title h2 {
-    font-weight: 400;
-    color: var(--main-blue);
-    font-size: 30px;
-}
-
-.carousel-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    border: 5px solid gainsboro;
-    padding: 15px;
+    padding: 60px 5%;
+    font-size: 24px;
+
+    min-width: 350px;
+    height: 400px;
+    width: 60%;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+#galery-section img {
+    height: 400px;
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    width:100%;
     height: 100px;
-    background-color: var(--main-blue);
+    background-color: var(--main-mustard);
+}
+
+.social-network-icons {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    filter: grayscale(50%)
 }
