@@ -1,4 +1,9 @@
 * {padding: 0; margin: 0; border: 0; box-sizing: border-box;}
+
+body {
+    width: 100vw;
+}
+
 html {
     --main-blue: #3573A6;
     --main-mustard:#FFBB24

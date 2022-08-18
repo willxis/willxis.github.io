@@ -8,7 +8,10 @@ window.onscroll = function() {
 }
 
 function moveProfileCard() {
+
+    console.log('pageoffset: ', window.pageYOffset)
     let opacityValue = (100 - Math.trunc(window.pageYOffset) / 3);
+    console.log('opacityValue: ', opacityValue)
     profileCard.style.opacity = opacityValue + '%';
 
     if (opacityValue > 50 ) {
